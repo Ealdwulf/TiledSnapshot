@@ -9,7 +9,7 @@ tiled-snapshot (0.15.1-1) unstable; urgency=low
   * Renamed to 'tiled-snapshot'
   * Updated maintainer
 
- -- Thorbjørn Lindeijer <bjorn@lindeijer.nl> Sun, 28 Feb 2016 20:24:00 +0100
+ -- Thorbjorn Lindeijer <bjorn@lindeijer.nl> Sun, 28 Feb 2016 20:24:00 +0100
 
 tiled-daily (0.8.0-2) unstable; urgency=low
 

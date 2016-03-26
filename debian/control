@@ -1,7 +1,7 @@
 Source: tiled-snapshot
 Section: utils
 Priority: optional
-Maintainer: Thorbjørn Lindeijer <bjorn@lindeijer.nl>
+Maintainer: Thorbjorn Lindeijer <bjorn@lindeijer.nl>
 Build-Depends: debhelper (>= 7.0.50~), qt5-default, xsltproc, docbook-xsl, qttools5-dev-tools, libqt5opengl5-dev, qt5-qmake,
                netpbm, zlib1g-dev
 Standards-Version: 3.9.2
