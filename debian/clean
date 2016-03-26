@@ -1,0 +1,6 @@
+tiled.1
+tiled-icon-32.ppm
+tiled-icon-32_alpha.pgm
+tiled-icon-32.xpm
+lib/tiled/plugins/*.so
+tmxviewer.1

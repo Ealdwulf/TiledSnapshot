@@ -1,0 +1,82 @@
+tiled (0.15.2-100-gd5be8ea) unstable; urgency=low
+
+  * using a git snapshot
+
+ -- -- Team Kano <dev@kano.me> Sat, 26 Mar 2016 12:21:39 +0000
+
+tiled-snapshot (0.15.1-1) unstable; urgency=low
+
+  * Renamed to 'tiled-snapshot'
+  * Updated maintainer
+
+ -- Thorbjørn Lindeijer <bjorn@lindeijer.nl> Sun, 28 Feb 2016 20:24:00 +0100
+
+tiled-daily (0.8.0-2) unstable; urgency=low
+
+  * Copied to PPA + renamed to tiled
+
+ -- Erik Schilling <ablu.erikschilling@googlemail.com> Mon, 20 Feb 2012 22:43:56 +0100
+
+tiled-daily (0.8.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Fri, 16 Dec 2011 23:37:43 +0800
+
+tiled-daily (0.7.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Mon, 10 Oct 2011 14:28:44 +0800
+
+tiled-daily (0.7.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Thu, 04 Aug 2011 17:23:23 +0800
+
+tiled-daily (0.6.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.2: nothing needs to be changed
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Mon, 23 May 2011 01:03:33 +0800
+
+tiled-daily (0.6.0-1) unstable; urgency=low
+
+  * New upstream release
+    - Upstream fix the FTBFS with binutils-gold (Closes: #600692)
+  * Update debian/copyright
+  * Add debian/tmxviewer.xml for missing manpage.
+  * Add libqt4-opengl-dev to Build-Depends
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Mon, 07 Feb 2011 22:59:50 +0800
+
+tiled-daily (0.5.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.1: nothing needs to be changed
+  * debian/clean: Add newline in end of file
+  * debian/tiled.install: remove comment lines
+  * remove unnecessary debian/bin
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Tue, 07 Sep 2010 03:12:01 +0800
+
+tiled-daily (0.5.0-11) unstable; urgency=low
+
+  * New upstream release
+  * debian/patches/addrpath.patch: Modify library install path.
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Mon, 05 Jul 2010 21:35:45 +0800
+
+tiled-daily (0.4.1-2) unstable; urgency=low
+
+  * Change binary package name from tiled to tiled
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Thu, 20 May 2010 22:35:31 +0800
+
+tiled-daily (0.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #502691)
+
+ -- Ying-Chun Liu (PaulLiu) <paulliu@debian.org>  Thu, 20 May 2010 20:33:27 +0800

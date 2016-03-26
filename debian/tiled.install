@@ -1,0 +1,2 @@
+share/tiled/translations/*.qm usr/share/tiled/translations
+tiled-icon-32.xpm /usr/share/pixmaps/tiled

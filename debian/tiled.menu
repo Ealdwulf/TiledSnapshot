@@ -1,0 +1,3 @@
+?package(tiled):needs="X11" section="Games/Tools"\
+  title="Tiled Map Editor" command="/usr/bin/tiled"\
+  icon="/usr/share/pixmaps/tiled/tiled-icon-32.xpm"

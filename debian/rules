@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DB2MAN = /usr/share/sgml/docbook/stylesheet/xsl/nwalsh/manpages/docbook.xsl
+XP     = xsltproc -''-nonet -''-param man.charmap.use.subset "0"
+
+%:
+	dh  $@
+
+override_dh_auto_configure:
+	qmake -r PREFIX=/usr TILED_VERSION=`date +%Y.%m.%d`
+	cd src/libtiled; qmake LIBDIR=/usr/lib/tiled
+
+override_dh_auto_build: tiled.1 tmxviewer.1
+	pngtopnm src/tiled/images/32x32/tiled.png > tiled-icon-32.ppm
+	pngtopnm -alpha src/tiled/images/32x32/tiled.png > tiled-icon-32_alpha.pgm
+	ppmtoxpm -name=tiled-icon-32 tiled-icon-32.ppm \
+	    -alphamask=tiled-icon-32_alpha.pgm > tiled-icon-32.xpm
+	dh_auto_build
+
+tiled.1: debian/tiled.xml
+	$(XP) $(DB2MAN) $<
+
+tmxviewer.1: debian/tmxviewer.xml
+	$(XP) $(DB2MAN) $<
+
+override_dh_makeshlibs:
+	dh_makeshlibs -Xlibtiled

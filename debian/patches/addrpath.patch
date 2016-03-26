@@ -1,0 +1,78 @@
+diff --git a/src/automappingconverter/automappingconverter.pro b/src/automappingconverter/automappingconverter.pro
+index ac9a9ed..e6ec0f8 100644
+--- a/src/automappingconverter/automappingconverter.pro
++++ b/src/automappingconverter/automappingconverter.pro
+@@ -17,7 +17,7 @@ macx {
+ 
+ # Make sure the executable can find libtiled
+ !win32:!macx:!cygwin:contains(RPATH, yes) {
+-    QMAKE_RPATHDIR += \$\$ORIGIN/../lib
++    QMAKE_RPATHDIR += \$\$ORIGIN/../lib/tiled
+ 
+     # It is not possible to use ORIGIN in QMAKE_RPATHDIR, so a bit manually
+     QMAKE_LFLAGS += -Wl,-z,origin \'-Wl,-rpath,$$join(QMAKE_RPATHDIR, ":")\'
+diff --git a/src/plugins/plugin.pri b/src/plugins/plugin.pri
+index 4c0831c..e18532e 100644
+--- a/src/plugins/plugin.pri
++++ b/src/plugins/plugin.pri
+@@ -28,7 +28,7 @@ macx {
+ 
+ # Set rpath so that the plugin will resolve libtiled correctly
+ !win32:!macx:!cygwin:contains(RPATH, yes) {
+-    QMAKE_RPATHDIR += \$\$ORIGIN/../..
++    QMAKE_RPATHDIR += \$\$ORIGIN/..
+ 
+     # It is not possible to use ORIGIN in QMAKE_RPATHDIR, so a bit manually
+     QMAKE_LFLAGS += -Wl,-z,origin \'-Wl,-rpath,$$join(QMAKE_RPATHDIR, ":")\'
+diff --git a/src/terraingenerator/terraingenerator.pro b/src/terraingenerator/terraingenerator.pro
+index 78ef918..f13de43 100644
+--- a/src/terraingenerator/terraingenerator.pro
++++ b/src/terraingenerator/terraingenerator.pro
+@@ -23,7 +23,7 @@ macx {
+ 
+ # Make sure the executable can find libtiled
+ !win32:!macx:!cygwin:contains(RPATH, yes) {
+-    QMAKE_RPATHDIR += \$\$ORIGIN/../lib
++    QMAKE_RPATHDIR += \$\$ORIGIN/../lib/tiled
+ 
+     # It is not possible to use ORIGIN in QMAKE_RPATHDIR, so a bit manually
+     QMAKE_LFLAGS += -Wl,-z,origin \'-Wl,-rpath,$$join(QMAKE_RPATHDIR, ":")\'
+diff --git a/src/tiled/tiled.pro b/src/tiled/tiled.pro
+index f7ec230..19998d1 100644
+--- a/src/tiled/tiled.pro
++++ b/src/tiled/tiled.pro
+@@ -31,7 +31,7 @@ macx {
+ 
+ # Make sure the Tiled executable can find libtiled
+ !win32:!macx:!cygwin:contains(RPATH, yes) {
+-    QMAKE_RPATHDIR += \$\$ORIGIN/../lib
++    QMAKE_RPATHDIR += \$\$ORIGIN/../lib/tiled
+ 
+     # It is not possible to use ORIGIN in QMAKE_RPATHDIR, so a bit manually
+     QMAKE_LFLAGS += -Wl,-z,origin \'-Wl,-rpath,$$join(QMAKE_RPATHDIR, ":")\'
+diff --git a/src/tmxrasterizer/tmxrasterizer.pro b/src/tmxrasterizer/tmxrasterizer.pro
+index fe78615..d9e4701 100644
+--- a/src/tmxrasterizer/tmxrasterizer.pro
++++ b/src/tmxrasterizer/tmxrasterizer.pro
+@@ -24,7 +24,7 @@ macx {
+ 
+ # Make sure the executable can find libtiled
+ !win32:!macx:!cygwin:contains(RPATH, yes) {
+-    QMAKE_RPATHDIR += \$\$ORIGIN/../lib
++    QMAKE_RPATHDIR += \$\$ORIGIN/../lib/tiled
+ 
+     # It is not possible to use ORIGIN in QMAKE_RPATHDIR, so a bit manually
+     QMAKE_LFLAGS += -Wl,-z,origin \'-Wl,-rpath,$$join(QMAKE_RPATHDIR, ":")\'
+diff --git a/src/tmxviewer/tmxviewer.pro b/src/tmxviewer/tmxviewer.pro
+index 1d6a0e0..72a0a21 100644
+--- a/src/tmxviewer/tmxviewer.pro
++++ b/src/tmxviewer/tmxviewer.pro
+@@ -24,7 +24,7 @@ macx {
+ 
+ # Make sure the executable can find libtiled
+ !win32:!macx:!cygwin:contains(RPATH, yes) {
+-    QMAKE_RPATHDIR += \$\$ORIGIN/../lib
++    QMAKE_RPATHDIR += \$\$ORIGIN/../lib/tiled
+ 
+     # It is not possible to use ORIGIN in QMAKE_RPATHDIR, so a bit manually
+     QMAKE_LFLAGS += -Wl,-z,origin \'-Wl,-rpath,$$join(QMAKE_RPATHDIR, ":")\'
